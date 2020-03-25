@@ -1,4 +1,4 @@
-package ui;
+package view;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -7,6 +7,8 @@ import java.awt.event.ActionListener;
 public class maszyna {
     private String wyswil;
     private int typKawy;
+    private int cukier;
+    private boolean czyMozna;
     private boolean moneta;
     private boolean wybor;
     private JButton ZrobKawe;
@@ -37,7 +39,8 @@ public class maszyna {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
                 if (moneta&&!wybor) {
-                    TextArea.append("espresso");
+                    cukier = 3;
+                    TextArea.append("espresso \n Cukier: ");
                     typKawy = 1;
                     wybor=!wybor;
                 }
@@ -64,13 +67,25 @@ public class maszyna {
         DodajCukier.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                wyswil = TextArea.toString();
+                if (moneta&&wybor) {
+                    if(cukier<5) cukier++;
+                    if(!czyMozna) wyswil = TextArea.getText();
+                    czyMozna = true;
+                    TextArea.setText(wyswil + String.valueOf(cukier));
+
+                }
             }
         });
         OdejmijCukier.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
+                if (moneta&&wybor) {
+                    if(cukier>0) cukier--;
+                    if(!czyMozna) wyswil = TextArea.getText();
+                    czyMozna = true;
+                    TextArea.setText(wyswil + String.valueOf(cukier));
 
+                }
             }
         });
     }
