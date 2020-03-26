@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d43abb27-c398-4261-8565-0e7ab15fa668" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AtomatDoKawy/ui/maszyna$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AtomatDoKawy/ui/maszyna$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AtomatDoKawy/ui/maszyna$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AtomatDoKawy/ui/maszyna$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AtomatDoKawy/ui/maszyna$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AtomatDoKawy/ui/maszyna$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AtomatDoKawy/ui/maszyna.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AtomatDoKawy/ui/maszyna.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/maszyna.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/maszyna.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/maszyna.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/maszyna.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/maszyna.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/maszyna.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/maszyna.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/maszyna.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

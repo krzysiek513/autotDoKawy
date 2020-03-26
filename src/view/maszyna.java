@@ -49,7 +49,7 @@ public class maszyna {
         ZrobKawe.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                if (moneta) {
+                if (moneta&&czyMozna) {
                     switch (typKawy){
                         case 1:
                             moneta = !moneta;
