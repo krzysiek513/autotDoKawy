@@ -2,7 +2,7 @@ package model;
 
 import javafx.beans.binding.BooleanExpression;
 
-abstract class Skladnik {
+abstract class Produkt {
     int ilosc = 0;
 
     boolean pobierzSkladnik(){

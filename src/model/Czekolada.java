@@ -1,6 +1,6 @@
 package model;
 
-class Czekolada extends Skladnik {
+class Czekolada extends Produkt {
     private static final int MAX_CZEKOLADA = 10;
 
     @Override

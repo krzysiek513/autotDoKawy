@@ -1,6 +1,6 @@
 package model;
 
-class Kawa extends Skladnik {
+class Kawa extends Produkt {
     private static final int MAX_KAWA = 30;
 
     @Override

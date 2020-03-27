@@ -1,6 +1,6 @@
 package model;
 
-import wyjatki.WyjatekBrakSkladniku;
+import wyjatki.WyjatekBrakSkladnika;
 
 public class Magazyn {
     Mleko mleko;
@@ -20,21 +20,21 @@ public class Magazyn {
         czekolada.wypelnij();
     }
 
-    public void getKawa() throws WyjatekBrakSkladniku {
+    public void getKawa() throws WyjatekBrakSkladnika {
         if(!kawa.pobierzSkladnik()){
-            throw new WyjatekBrakSkladniku("kawa");
+            throw new WyjatekBrakSkladnika("kawa");
         }
     }
 
-    public void getMleko() throws WyjatekBrakSkladniku {
+    public void getMleko() throws WyjatekBrakSkladnika {
         if(!kawa.pobierzSkladnik()){
-            throw new WyjatekBrakSkladniku("mleko");
+            throw new WyjatekBrakSkladnika("mleko");
         }
     }
 
-    public void getCzekolada() throws WyjatekBrakSkladniku {
+    public void getCzekolada() throws WyjatekBrakSkladnika {
         if(!kawa.pobierzSkladnik()){
-            throw new WyjatekBrakSkladniku("czekolada");
+            throw new WyjatekBrakSkladnika("czekolada");
         }
     }
 }
