@@ -2,12 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d43abb27-c398-4261-8565-0e7ab15fa668" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/model/Czekolada.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Czekolada.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Kawa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Kawa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/Zrob.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/ZrobEspresso.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/View.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AtomatDoKawy/model/Czekolada.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AtomatDoKawy/model/Czekolada.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AtomatDoKawy/model/Kawa.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AtomatDoKawy/model/Kawa.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AtomatDoKawy/model/Magazyn.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AtomatDoKawy/model/Magazyn.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AtomatDoKawy/model/Mleko.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AtomatDoKawy/model/Mleko.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AtomatDoKawy/model/Skladnik.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AtomatDoKawy/model/wyjatki/brakSkladniku.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AtomatDoKawy/view/maszyna$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AtomatDoKawy/view/maszyna$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AtomatDoKawy/view/maszyna$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AtomatDoKawy/view/maszyna$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AtomatDoKawy/view/maszyna$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AtomatDoKawy/view/maszyna$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AtomatDoKawy/view/maszyna$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AtomatDoKawy/view/maszyna$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AtomatDoKawy/view/maszyna$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AtomatDoKawy/view/maszyna$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AtomatDoKawy/view/maszyna.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AtomatDoKawy/view/maszyna.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/AutomatDoKawy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/AutomatDoKawy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/skladniki/Czekolada.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/skladniki/Czekolada.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/skladniki/Kawa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/skladniki/Kawa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/skladniki/Mleko.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/skladniki/Mleko.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/skladniki/skladnik.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/skladniki/skladnik.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/Magazyn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Magazyn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Mleko.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Mleko.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Skladnik.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Produkt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/wyjatki/WyjatekBrakSkladniku.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/wyjatki/WyjatekBrakSkladnika.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/UserInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/maszyna.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/maszyna.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,6 +52,10 @@
     <property name="settings.editor.selected.configurable" value="project.propGUI" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="controller" />
+      <recent name="view" />
+    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="model" />
       <recent name="" />
@@ -57,7 +79,7 @@
       <module name="AtomatDoKawy" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="view.*" />
+          <option name="PATTERN" value="controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>

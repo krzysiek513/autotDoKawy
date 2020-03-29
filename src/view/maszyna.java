@@ -1,10 +1,14 @@
 package view;
 
+import controller.AutomatDoKawy;
+import controller.ZrobEspresso;
+
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class maszyna {
+public class maszyna implements UserInterface {
+    AutomatDoKawy automatDoKawy;
     private String wyswil;
     private int typKawy;
     private int cukier;
@@ -54,7 +58,9 @@ public class maszyna {
                         case 1:
                             moneta = !moneta;
                             wybor=!wybor;
-                            TextArea.setText("Gotowe!\nWrzuc monete");
+                            automatDoKawy = new ZrobEspresso(new View());
+                            automatDoKawy.zrobKawe();
+                            TextArea.setText("Espresso gotowe!\nWrzuc monete");
                             typKawy = 0;
                             break;
                         default:
@@ -96,5 +102,20 @@ public class maszyna {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
         frame.setVisible(true);
+    }
+
+    @Override
+    public void pokazKrok(String msg) {
+
+    }
+
+    @Override
+    public void pokazBlad(String msg) {
+
+    }
+
+    @Override
+    public void kawaGotowa(String msg) {
+
     }
 }

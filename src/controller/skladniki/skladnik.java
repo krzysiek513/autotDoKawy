@@ -1,10 +1,10 @@
-package skladniki;
+package controller.skladniki;
 
 import model.Magazyn;
 import view.UserInterface;
 import wyjatki.WyjatekBrakSkladnika;
 
-public class skladnik {
+public abstract class skladnik {
     Magazyn magazyn;
     UserInterface userInterface;
 

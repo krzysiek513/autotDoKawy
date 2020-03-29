@@ -3,6 +3,7 @@ package model;
 import wyjatki.WyjatekBrakSkladnika;
 
 public class Magazyn {
+    private static Magazyn magazyn;
     Mleko mleko;
     Czekolada czekolada;
     Kawa kawa;
@@ -12,6 +13,13 @@ public class Magazyn {
         mleko = new Mleko();
         czekolada = new Czekolada();
         fillAll();
+    }
+
+    public static Magazyn getInstance() {
+        if(magazyn == null) {
+            magazyn = new Magazyn();
+        }
+        return magazyn;
     }
 
     public void fillAll() {

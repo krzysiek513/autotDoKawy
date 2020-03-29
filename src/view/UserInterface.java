@@ -1,11 +1,11 @@
-package com.company.logic.widok;
+package view;
 
-public interface WidokUzytkownika {
+public interface UserInterface {
 
     void pokazKrok(String msg);
 
     void pokazBlad(String msg);
 
-    void pokazZrobionaKawe(String msg);
+    void kawaGotowa(String msg);
 
 }
