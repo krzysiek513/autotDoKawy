@@ -1,27 +1,29 @@
 package controller;
 
+import controller.skladniki.Czekolada;
 import controller.skladniki.Kawa;
+import controller.skladniki.Mleko;
 import model.Magazyn;
 import view.UserInterface;
 
 abstract class Zrob implements AutomatDoKawy {
     UserInterface userInterface;
 
-    //SkladnikCzekolada skladnikCzekolada;
+    Czekolada skladnikCzekolada;
     Kawa skladnikKawa;
-    //SkladnikMleko skladnikMleko;
+    Mleko skladnikMleko;
     private String cukier;
 
     Zrob(UserInterface userInterface){
-        this.userInterface =userInterface;
+        this.userInterface = userInterface;
     }
 
     @Override
     public void zrobKawe() {
         Magazyn magazyn = Magazyn.getInstance();
-      //  skladnikCzekolada = new SkladnikCzekolada(magazyn, widokUzytkownika);
+        skladnikCzekolada = new Czekolada(magazyn, userInterface);
         skladnikKawa = new Kawa(magazyn, userInterface);
-       // skladnikMleko = new SkladnikMleko(magazyn, widokUzytkownika);
+        skladnikMleko = new Mleko(magazyn, userInterface);
     }
 
     @Override

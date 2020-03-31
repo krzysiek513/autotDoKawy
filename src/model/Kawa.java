@@ -1,7 +1,7 @@
 package model;
 
 class Kawa extends Produkt {
-    private static final int MAX_KAWA = 30;
+    private static final int MAX_KAWA = 3;
 
     @Override
     void wypelnij() {

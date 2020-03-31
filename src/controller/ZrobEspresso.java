@@ -10,7 +10,7 @@ public class ZrobEspresso extends Zrob {
     @Override
     public void zrobKawe() {
         super.zrobKawe();
-        boolean status = skladnikKawa.dodajSkladnik();
+        boolean status = skladnikKawa.dodajSkladnik() && skladnikKawa.dodajSkladnik();
         if(status){
             userInterface.kawaGotowa("espresso gotowe");
         }
