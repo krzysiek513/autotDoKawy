@@ -6,7 +6,7 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class maszyna implements UserInterface {
+public class maszyna {
     AutomatDoKawy automatDoKawy;
     private String wyswil;
     private int typKawy;
@@ -23,12 +23,14 @@ public class maszyna implements UserInterface {
     private JButton DodajCukier;
     private JButton OdejmijCukier;
     private JTextField dodajCukierTextField;
-    private JPanel maszyna;
+    public JPanel maszyna;
     private JButton Czekolada;
     private JButton Cappuccino;
     private JButton Mocha;
 
     public maszyna() {
+
+
         WrzucMonete.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
@@ -196,26 +198,6 @@ public class maszyna implements UserInterface {
         });
     }
 
-    public static void main(String[] args) {
-        JFrame frame = new JFrame("maszyna");
-        frame.setContentPane(new maszyna().maszyna);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.pack();
-        frame.setVisible(true);
-    }
 
-    @Override
-    public void pokazKrok(String msg) {
 
-    }
-
-    @Override
-    public void pokazBlad(String msg) {
-
-    }
-
-    @Override
-    public void kawaGotowa(String msg) {
-
-    }
 }
