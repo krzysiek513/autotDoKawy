@@ -13,7 +13,7 @@ public class ZrobCappuccino extends Zrob {
         super.zrobKawe();
         boolean status = skladnikMleko.dodajSkladnik() && skladnikKawa.dodajSkladnik() && skladnikKawa.dodajSkladnik();
         if(status){
-            userInterface.kawaGotowa("Cappuccino gotowe!");
+            userInterface.kawaGotowa("Cappuccino gotowe!\nWrzuc monete");
         }
     }
 }

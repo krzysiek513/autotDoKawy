@@ -7,22 +7,20 @@
       <change beforePath="$PROJECT_DIR$/out/production/AtomatDoKawy/controller/ZrobCappuccino.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AtomatDoKawy/controller/ZrobCappuccino.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/AtomatDoKawy/controller/ZrobCzekolade.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AtomatDoKawy/controller/ZrobCzekolade.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/AtomatDoKawy/controller/ZrobELatte.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AtomatDoKawy/controller/ZrobELatte.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AtomatDoKawy/controller/ZrobEspresso.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AtomatDoKawy/controller/ZrobEspresso.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/AtomatDoKawy/controller/ZrobMocha.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AtomatDoKawy/controller/ZrobMocha.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AtomatDoKawy/controller/skladniki/Czekolada.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AtomatDoKawy/controller/skladniki/Czekolada.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AtomatDoKawy/controller/skladniki/Kawa.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AtomatDoKawy/controller/skladniki/Kawa.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AtomatDoKawy/controller/skladniki/Mleko.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AtomatDoKawy/controller/skladniki/Mleko.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/AtomatDoKawy/controller/skladniki/skladnik.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AtomatDoKawy/controller/skladniki/skladnik.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/AtomatDoKawy/view/UserInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AtomatDoKawy/view/UserInterface.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AtomatDoKawy/view/View.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/AtomatDoKawy/view/Zamowienie.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AtomatDoKawy/view/Zamowienie.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AtomatDoKawy/view/maszyna.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AtomatDoKawy/view/maszyna.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/ZrobEspresso.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/ZrobEspresso.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/skladniki/Kawa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/skladniki/Kawa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/ZrobAmericano.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/ZrobAmericano.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/ZrobCappuccino.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/ZrobCappuccino.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/ZrobCzekolade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/ZrobCzekolade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/ZrobELatte.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/ZrobELatte.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/ZrobMocha.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/ZrobMocha.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/skladniki/Czekolada.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/skladniki/Czekolada.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/skladniki/Mleko.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/skladniki/Mleko.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/skladniki/skladnik.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/skladniki/skladnik.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/UserInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/View.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/Zamowienie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Zamowienie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/maszyna.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/maszyna.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

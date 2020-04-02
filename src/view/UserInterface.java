@@ -9,14 +9,16 @@ public class UserInterface {
 
     public void pokazKrok(String msg) {
         System.out.println("+ " + msg);
+        maszyna.dodaj("\n" + msg);
     }
 
     public void pokazBlad(String msg) {
         System.out.println("- " + msg);
+        maszyna.dodaj("\n" + msg);
     }
 
     public void kawaGotowa(String msg) {
         System.out.println("-- " + msg + " --");
-        maszyna.wyswietl("-- " + msg);
+        maszyna.wyswietl(msg);
     }
 }

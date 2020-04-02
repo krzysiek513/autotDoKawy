@@ -12,7 +12,7 @@ public class ZrobAmericano extends Zrob {
         super.zrobKawe();
         boolean status = skladnikKawa.dodajSkladnik() && skladnikKawa.dodajSkladnik() && skladnikMleko.dodajSkladnik();
         if (status){
-            userInterface.kawaGotowa("Ameticano gotowe!");
+            userInterface.kawaGotowa("Ameticano gotowe!\nWrzuc monete");
         }
     }
 }

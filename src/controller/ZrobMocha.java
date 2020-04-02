@@ -12,7 +12,7 @@ public class ZrobMocha extends Zrob {
         super.zrobKawe();
         boolean status = skladnikKawa.dodajSkladnik() && skladnikMleko.dodajSkladnik()&& skladnikCzekolada.dodajSkladnik();
         if(status) {
-            userInterface.kawaGotowa("Mocha gotowa!");
+            userInterface.kawaGotowa("Mocha gotowa!\nWrzuc monete");
         }
     }
 }

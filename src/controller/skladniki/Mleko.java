@@ -8,7 +8,7 @@ public class Mleko extends skladnik {
     @Override
     void sprobujDodacSkladnik() throws WyjatekBrakSkladnika {
         magazyn.getMleko();
-        userInterface.pokazKrok("--mleko");
+        userInterface.pokazKrok("mleko");
     }
 
     public Mleko(Magazyn magazyn, UserInterface userInterface) {

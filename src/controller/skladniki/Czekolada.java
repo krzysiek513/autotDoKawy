@@ -13,7 +13,7 @@ public class Czekolada extends skladnik {
     @Override
     void sprobujDodacSkladnik() throws WyjatekBrakSkladnika {
         magazyn.getCzekolada();
-        userInterface.pokazKrok("--czekolada");
+        userInterface.pokazKrok("czekolada");
 
     }
 }

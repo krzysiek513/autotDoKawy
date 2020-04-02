@@ -19,7 +19,7 @@ public abstract class skladnik {
             sprobujDodacSkladnik();
             status = true;
         } catch (WyjatekBrakSkladnika wbs) {
-            userInterface.pokazBlad("Brak produktu " + wbs.getMessage());
+            userInterface.pokazBlad( wbs.getMessage());
         }
         return status;
 

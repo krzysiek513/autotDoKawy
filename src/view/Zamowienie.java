@@ -35,7 +35,7 @@ public class Zamowienie {
                     wybor=!wybor;
                     automatDoKawy = new ZrobCzekolade(new UserInterface(maszyna));
                     automatDoKawy.zrobKawe();
-                    maszyna.wyswietl("Czekolada gotowa!\nWrzuc monete");
+                    //maszyna.wyswietl("Czekolada gotowa!\nWrzuc monete");
                     typKawy = 0;
                     break;
                 case 3:
@@ -44,7 +44,7 @@ public class Zamowienie {
                     wybor=!wybor;
                     automatDoKawy = new ZrobCappuccino(new UserInterface(maszyna));
                     automatDoKawy.zrobKawe();
-                    maszyna.wyswietl("Cappuccino gotowe!\nWrzuc monete");
+                    //maszyna.wyswietl("Cappuccino gotowe!\nWrzuc monete");
                     typKawy = 0;
                     break;
                 case 4:
@@ -53,7 +53,7 @@ public class Zamowienie {
                     wybor=!wybor;
                     automatDoKawy = new ZrobELatte(new UserInterface(maszyna));
                     automatDoKawy.zrobKawe();
-                    maszyna.wyswietl("Latte gotowe!\nWrzuc monete");
+                    //maszyna.wyswietl("Latte gotowe!\nWrzuc monete");
                     typKawy = 0;
                     break;
                 case 5:
@@ -62,7 +62,7 @@ public class Zamowienie {
                     wybor=!wybor;
                     automatDoKawy = new ZrobMocha(new UserInterface(maszyna));
                     automatDoKawy.zrobKawe();
-                    maszyna.wyswietl("Mocha gotowe!\nWrzuc monete");
+                    //maszyna.wyswietl("Mocha gotowe!\nWrzuc monete");
                     typKawy = 0;
                     break;
                 case 6:
@@ -71,7 +71,7 @@ public class Zamowienie {
                     wybor=!wybor;
                     automatDoKawy = new ZrobAmericano(new UserInterface(maszyna));
                     automatDoKawy.zrobKawe();
-                    maszyna.wyswietl("Americano gotowe!\nWrzuc monete");
+                    //maszyna.wyswietl("Americano gotowe!\nWrzuc monete");
                     typKawy = 0;
                     break;
                 default:
