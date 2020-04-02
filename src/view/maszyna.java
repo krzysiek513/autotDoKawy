@@ -14,6 +14,8 @@ public class maszyna {
     private boolean czyMozna;
     private boolean moneta;
     private boolean wybor;
+
+    private Zamowienie zamowienie;
     private JButton ZrobKawe;
     private JButton WrzucMonete;
     private JTextArea TextArea;
@@ -30,91 +32,23 @@ public class maszyna {
 
     public maszyna() {
 
-
+        zamowienie = new Zamowienie(this);
         WrzucMonete.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                if(!moneta){
-                    moneta = true;
-                    TextArea.setText("wybierz kawe: ");
-                }
+                zamowienie.start();
             }
         });
         Espresso.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                if (moneta&&!wybor) {
-                    cukier = 3;
-                    TextArea.append("Espresso \n Cukier: ");
-                    typKawy = 1;
-                    wybor=!wybor;
-                }
+                zamowienie.espresso();
             }
         });
         ZrobKawe.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                if (moneta&&czyMozna) {
-                    switch (typKawy){
-                        case 1:
-                            moneta=!moneta;
-                            czyMozna=!czyMozna;
-                            wybor=!wybor;
-                            automatDoKawy = new ZrobEspresso(new View());
-                            automatDoKawy.zrobKawe();
-                            TextArea.setText("Espresso gotowe!\nWrzuc monete");
-                            typKawy = 0;
-                            break;
-                        case 2:
-                            moneta = !moneta;
-                            czyMozna=!czyMozna;
-                            wybor=!wybor;
-                            automatDoKawy = new ZrobCzekolade(new View());
-                            automatDoKawy.zrobKawe();
-                            TextArea.setText("Czekolada gotowa!\nWrzuc monete");
-                            typKawy = 0;
-                            break;
-                        case 3:
-                            moneta = !moneta;
-                            czyMozna=!czyMozna;
-                            wybor=!wybor;
-                            automatDoKawy = new ZrobCappuccino(new View());
-                            automatDoKawy.zrobKawe();
-                            TextArea.setText("Cappuccino gotowe!\nWrzuc monete");
-                            typKawy = 0;
-                            break;
-                        case 4:
-                            moneta = !moneta;
-                            czyMozna=!czyMozna;
-                            wybor=!wybor;
-                            automatDoKawy = new ZrobELatte(new View());
-                            automatDoKawy.zrobKawe();
-                            TextArea.setText("Latte gotowe!\nWrzuc monete");
-                            typKawy = 0;
-                            break;
-                        case 5:
-                            moneta = !moneta;
-                            czyMozna=!czyMozna;
-                            wybor=!wybor;
-                            automatDoKawy = new ZrobMocha(new View());
-                            automatDoKawy.zrobKawe();
-                            TextArea.setText("Mocha gotowe!\nWrzuc monete");
-                            typKawy = 0;
-                            break;
-                        case 6:
-                            moneta = !moneta;
-                            czyMozna= !czyMozna;
-                            wybor=!wybor;
-                            automatDoKawy = new ZrobAmericano(new View());
-                            automatDoKawy.zrobKawe();
-                            TextArea.setText("Americano gotowe!\nWrzuc monete");
-                            typKawy = 0;
-                            break;
-                        default:
-                            TextArea.setText("Błąd ");
-
-                    }
-                }
+                zamowienie.zrobKawe();
             }
         });
         DodajCukier.addActionListener(new ActionListener() {
@@ -144,60 +78,40 @@ public class maszyna {
         Czekolada.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                if (moneta&&!wybor) {
-                    cukier = 3;
-                    TextArea.append("Czekolada \n Cukier: ");
-                    typKawy = 2;
-                    wybor=!wybor;
-                }
+                zamowienie.czekolada();
             }
         });
         Cappuccino.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                if (moneta&&!wybor) {
-                    cukier = 3;
-                    TextArea.append("Cappuccino \n Cukier: ");
-                    typKawy = 3;
-                    wybor=!wybor;
-                }
+                zamowienie.cappuccino();
             }
         });
         Latte.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                if (moneta&&!wybor) {
-                    cukier = 3;
-                    TextArea.append("Latte \n Cukier: ");
-                    typKawy = 4;
-                    wybor=!wybor;
-                }
+                zamowienie.latte();
             }
         });
         Mocha.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                if (moneta&&!wybor) {
-                    cukier = 3;
-                    TextArea.append("Mocha \n Cukier: ");
-                    typKawy = 5;
-                    wybor=!wybor;
-                }
+                zamowienie.mocha();
             }
         });
         Americano.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                if (moneta&&!wybor) {
-                    cukier = 3;
-                    TextArea.append("Americano \n Cukier: ");
-                    typKawy = 6;
-                    wybor=!wybor;
-                }
+                zamowienie.americano();
             }
         });
     }
 
-
+    void wyswietl(String msg){
+        TextArea.setText(msg);
+    }
+    void dodaj(String msg){
+        TextArea.append(msg);
+    }
 
 }

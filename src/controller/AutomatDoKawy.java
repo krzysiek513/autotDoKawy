@@ -4,5 +4,5 @@ public interface AutomatDoKawy {
 
     void zrobKawe();
 
-    void dodajCukier();
+    void dodajCukier(boolean i);
 }
