@@ -87,6 +87,24 @@ public class Zamowienie {
         }
     }
 
+    public void dodajCukier(boolean i){
+        if(i){
+            if (moneta&&wybor) {
+                if(cukier<5) cukier++;
+                if(!czyMozna) wyswil = maszyna.pokaz();
+                czyMozna = true;
+                maszyna.wyswietl(wyswil + String.valueOf(cukier));
+            }
+        }else{
+            if (moneta&&wybor) {
+                if(cukier>0) cukier--;
+                if(!czyMozna) wyswil = maszyna.pokaz();
+                czyMozna = true;
+                maszyna.wyswietl(wyswil + String.valueOf(cukier));
+            }
+        }
+    }
+
     public void espresso() {
         if (moneta&&!wybor) {
             cukier = 3;

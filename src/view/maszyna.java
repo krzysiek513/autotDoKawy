@@ -7,13 +7,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class maszyna {
-    AutomatDoKawy automatDoKawy;
-    private String wyswil;
-    private int typKawy;
-    private int cukier;
-    private boolean czyMozna;
-    private boolean moneta;
-    private boolean wybor;
 
     private Zamowienie zamowienie;
     private JButton ZrobKawe;
@@ -54,25 +47,13 @@ public class maszyna {
         DodajCukier.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                if (moneta&&wybor) {
-                    if(cukier<5) cukier++;
-                    if(!czyMozna) wyswil = TextArea.getText();
-                    czyMozna = true;
-                    TextArea.setText(wyswil + String.valueOf(cukier));
-
-                }
+                zamowienie.dodajCukier(true);
             }
         });
         OdejmijCukier.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                if (moneta&&wybor) {
-                    if(cukier>0) cukier--;
-                    if(!czyMozna) wyswil = TextArea.getText();
-                    czyMozna = true;
-                    TextArea.setText(wyswil + String.valueOf(cukier));
-
-                }
+                zamowienie.dodajCukier(false);
             }
         });
         Czekolada.addActionListener(new ActionListener() {
@@ -106,7 +87,7 @@ public class maszyna {
             }
         });
     }
-
+    String pokaz(){ return TextArea.getText(); }
     void wyswietl(String msg){
         TextArea.setText(msg);
     }

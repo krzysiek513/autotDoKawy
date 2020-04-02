@@ -15,7 +15,6 @@ class View implements UserInterface {
     @Override
     public void kawaGotowa(String msg) {
         System.out.println("-- " + msg + " --");
-
     }
 }
 

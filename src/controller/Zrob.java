@@ -12,7 +12,6 @@ abstract class Zrob implements AutomatDoKawy {
     Czekolada skladnikCzekolada;
     Kawa skladnikKawa;
     Mleko skladnikMleko;
-    public int cukier;
 
     Zrob(UserInterface userInterface){
         this.userInterface = userInterface;
@@ -28,11 +27,5 @@ abstract class Zrob implements AutomatDoKawy {
 
     @Override
     public void dodajCukier(boolean i) {
-        if(i){
-
-        }else{
-
-        }
-
     }
 }
