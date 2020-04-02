@@ -87,11 +87,11 @@ public class maszyna {
             }
         });
     }
-    String pokaz(){ return TextArea.getText(); }
-    void wyswietl(String msg){
+    public String pokaz(){ return TextArea.getText(); }
+    public void wyswietl(String msg){
         TextArea.setText(msg);
     }
-    void dodaj(String msg){
+    public void dodaj(String msg){
         TextArea.append(msg);
     }
 

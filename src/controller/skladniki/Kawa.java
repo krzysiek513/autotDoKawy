@@ -8,7 +8,7 @@ public class Kawa extends skladnik {
     @Override
     void sprobujDodacSkladnik() throws WyjatekBrakSkladnika {
         magazyn.getKawa();
-        userInterface.pokazKrok("--kawa");
+        userInterface.pokazKrok("kawa");
     }
 
     public Kawa(Magazyn magazyn, UserInterface userInterface) {

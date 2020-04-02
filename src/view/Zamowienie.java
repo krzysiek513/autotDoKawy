@@ -24,16 +24,16 @@ public class Zamowienie {
                     moneta=!moneta;
                     czyMozna=!czyMozna;
                     wybor=!wybor;
-                    automatDoKawy = new ZrobEspresso(new View());
+                    automatDoKawy = new ZrobEspresso(new UserInterface(maszyna));
                     automatDoKawy.zrobKawe();
-                    maszyna.wyswietl("Espresso gotowe!\nWrzuc monete");
+                    //maszyna.wyswietl("Espresso gotowe!\nWrzuc monete");
                     typKawy = 0;
                     break;
                 case 2:
                     moneta = !moneta;
                     czyMozna=!czyMozna;
                     wybor=!wybor;
-                    automatDoKawy = new ZrobCzekolade(new View());
+                    automatDoKawy = new ZrobCzekolade(new UserInterface(maszyna));
                     automatDoKawy.zrobKawe();
                     maszyna.wyswietl("Czekolada gotowa!\nWrzuc monete");
                     typKawy = 0;
@@ -42,7 +42,7 @@ public class Zamowienie {
                     moneta = !moneta;
                     czyMozna=!czyMozna;
                     wybor=!wybor;
-                    automatDoKawy = new ZrobCappuccino(new View());
+                    automatDoKawy = new ZrobCappuccino(new UserInterface(maszyna));
                     automatDoKawy.zrobKawe();
                     maszyna.wyswietl("Cappuccino gotowe!\nWrzuc monete");
                     typKawy = 0;
@@ -51,7 +51,7 @@ public class Zamowienie {
                     moneta = !moneta;
                     czyMozna=!czyMozna;
                     wybor=!wybor;
-                    automatDoKawy = new ZrobELatte(new View());
+                    automatDoKawy = new ZrobELatte(new UserInterface(maszyna));
                     automatDoKawy.zrobKawe();
                     maszyna.wyswietl("Latte gotowe!\nWrzuc monete");
                     typKawy = 0;
@@ -60,7 +60,7 @@ public class Zamowienie {
                     moneta = !moneta;
                     czyMozna=!czyMozna;
                     wybor=!wybor;
-                    automatDoKawy = new ZrobMocha(new View());
+                    automatDoKawy = new ZrobMocha(new UserInterface(maszyna));
                     automatDoKawy.zrobKawe();
                     maszyna.wyswietl("Mocha gotowe!\nWrzuc monete");
                     typKawy = 0;
@@ -69,7 +69,7 @@ public class Zamowienie {
                     moneta = !moneta;
                     czyMozna= !czyMozna;
                     wybor=!wybor;
-                    automatDoKawy = new ZrobAmericano(new View());
+                    automatDoKawy = new ZrobAmericano(new UserInterface(maszyna));
                     automatDoKawy.zrobKawe();
                     maszyna.wyswietl("Americano gotowe!\nWrzuc monete");
                     typKawy = 0;

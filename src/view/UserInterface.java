@@ -1,11 +1,22 @@
 package view;
 
-public interface UserInterface {
+public class UserInterface {
+    public maszyna maszyna;
 
-    void pokazKrok(String msg);
+    public UserInterface(view.maszyna maszyna) {
+        this.maszyna = maszyna;
+    }
 
-    void pokazBlad(String msg);
+    public void pokazKrok(String msg) {
+        System.out.println("+ " + msg);
+    }
 
-    void kawaGotowa(String msg);
+    public void pokazBlad(String msg) {
+        System.out.println("- " + msg);
+    }
 
+    public void kawaGotowa(String msg) {
+        System.out.println("-- " + msg + " --");
+        maszyna.wyswietl("-- " + msg);
+    }
 }
